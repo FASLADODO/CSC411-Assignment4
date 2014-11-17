@@ -1,0 +1,25 @@
+Gameplan:
+- definately ensemble methods
+- upwards of 10
+	- neural nets
+	- naive bayes
+	- adaboost something
+	- svm
+- look to use unlabeled data set (maybe).  Most likely for something like PCA.
+
+
+- neural net (taken from past homework stuff)
+	- number of hiddens
+	- learning rate
+	- momentum
+	- stopping code
+- naive bayes
+
+
+
+**https://code.google.com/p/adaboostmatlab/downloads/list**
+^LOOK AT DIS SHIT.
+ISN"T IT NEAT.
+WOULND"T YOU SAY THIS ALGORITHM IS COMPLETE.
+
+WOULDN'T YOU SAY THAT THIS CODE, THIS CODE CLASSIFIES ... EVERYTHING
