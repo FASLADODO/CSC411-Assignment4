@@ -18,7 +18,7 @@ end
 % Cross validation
 for K=[3:10 15 20 35 50]
   nfold = 10;
-  acc(K) = cross_validate(K, tr_images, tr_labels, nfold);
+  acc(K) = cross_validate_knn(K, tr_images, tr_labels, nfold);
   fprintf('%d-fold cross-validation with K=%d resulted in %.4f accuracy\n', nfold, K, acc(K));
 end
 [maxacc bestK] = max(acc);

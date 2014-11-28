@@ -1,7 +1,11 @@
+%This scrip runs multiclass logistic regression using all the training data
+%then tests it.  It should not be used, rather baseline_multiclass should
+%be used as it includes validation steps.
+
 load labeled_images.mat;
 load public_test_images.mat;
 k = 7;                  %number of classes
-t = 2000;                 %number of training iterations
+t = 4000;                 %number of training iterations
 learning_rate = 0.001;
 
 training_data = reshape_data(tr_images)';
