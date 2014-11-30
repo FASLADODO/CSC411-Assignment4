@@ -4,7 +4,7 @@ function [ predictions ] = multiclass_logistic_classifier( validationParam, tr_i
 
     k = 7;                      %number of classes
     %t = 2000;                   %number of training iterations (only 1 should be uncommented)
-    t = validationParam;
+    t = 4000;
     learning_rate = 0.006;      %learning rate
     %learning_rate = validationParam;
 

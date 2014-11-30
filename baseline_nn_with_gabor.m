@@ -9,6 +9,7 @@ tr_labels = one_hot_encode_labels(tr_labels, 7);
 tr_labels = tr_labels';
 
 %change the values in this script to edit the parameters for the neural net
+hiddenLayerSize = 500;
 neural_net_script_2;
 
 test_images = gabor_features(public_test_images);

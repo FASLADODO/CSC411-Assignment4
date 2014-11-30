@@ -11,7 +11,7 @@ x = tr_images;
 t = tr_labels;
 
 % Create a Pattern Recognition Network
-hiddenLayerSize = 500;
+%hiddenLayerSize = 200;
 net = patternnet(hiddenLayerSize);
 
 % Choose Input and Output Pre/Post-Processing Functions
@@ -24,9 +24,9 @@ net.output.processFcns = {'removeconstantrows','mapminmax'};
 % For a list of all data division functions type: help nndivide
 net.divideFcn = 'dividerand';  % Divide data randomly
 net.divideMode = 'sample';  % Divide up every sample
-net.divideParam.trainRatio = 85/100;
-net.divideParam.valRatio = 15/100;
-net.divideParam.testRatio = 0/100;
+net.divideParam.trainRatio = 70/100;
+net.divideParam.valRatio = 20/100;
+net.divideParam.testRatio = 10/100;
 
 % For help on training function 'trainscg' type: help trainscg
 % For a list of all training functions type: help nntrain
@@ -62,13 +62,13 @@ valPerformance = perform(net,valTargets,y)
 testPerformance = perform(net,testTargets,y)
 
 % View the Network
-view(net)
+% view(net)
 
 % Plots
 % Uncomment these lines to enable various plots.
 %figure, plotperform(tr)
 %figure, plottrainstate(tr)
-figure, plotconfusion(t,y)
+%figure, plotconfusion(t,y)
 %figure, plotroc(t,y)
 %figure, ploterrhist(e)
 
