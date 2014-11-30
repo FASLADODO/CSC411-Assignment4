@@ -5,8 +5,8 @@
 load labeled_images.mat;
 load public_test_images.mat;
 k = 7;                  %number of classes
-t = 4000;                 %number of training iterations
-learning_rate = 0.001;
+t = 100000;                 %number of training iterations
+learning_rate = 0.006;
 
 training_data = reshape_data(tr_images)';
 training_data = training_data/1000;

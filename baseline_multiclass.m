@@ -13,13 +13,10 @@ end
 % multiclass_logistic_classifier function
 K = 1;
 diff = 1;
-while (K < 3) || (acc(K-diff) > acc(K-2*diff))
+while (K < 4) || (acc(K-diff) > acc(K-2*diff) || (acc(K-diff) > acc(K-3*diff)))
   nfold = 5;
   acc(K) = cross_validate_multi_logistic(K*100, tr_images, tr_labels, nfold);
   fprintf('%d-fold cross-validation with K=%d resulted in %.4f accuracy\n', nfold, K*100, acc(K));
-  if (K > 10)
-      diff = 10;
-  end
   K = K + diff;
 end
 

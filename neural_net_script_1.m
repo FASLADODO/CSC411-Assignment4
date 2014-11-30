@@ -7,6 +7,8 @@
 %   tr_images - input data.
 %   tr_labels - target data.
 
+
+
 inputs = tr_images;
 targets = tr_labels;
 
