@@ -13,6 +13,10 @@ test_images = gabor_features(test_images);
 tr_images = gabor_features(tr_images);
 
 %---------------------------------
+
+% test_images = reshape_data(test_images)';
+% tr_images = reshape_data(tr_images)';
+
 nfold = 5;
 ntr = size(tr_images, 1);
 
