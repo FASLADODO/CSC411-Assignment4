@@ -12,6 +12,7 @@ function [ predictions ] = multiclass_logistic_classifier( validationParam, tr_i
     training_data = training_data/1000;
     test_data = reshape_data(public_test_images)';
     test_data = test_data/1000;
+    
     num_training_examples = size(training_data, 1);
     num_test_examples = size(test_data, 1);
     num_dimensions = size(training_data, 2);

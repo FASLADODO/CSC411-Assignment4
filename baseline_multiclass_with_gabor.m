@@ -18,7 +18,7 @@ K = 1;
 diff = 1;
 while (K < 10)
   nfold = 5;
-  acc(K) = cross_validate_multi_logistic_modified(K/10, tr_images, tr_labels, nfold);
+  acc(K) = cross_validate_multi_logistic_modified(K/1, tr_images, tr_labels, nfold);
   fprintf('%d-fold cross-validation with K=%d resulted in %.4f accuracy\n', nfold, K*100, acc(K));
   K = K + diff;
 end
