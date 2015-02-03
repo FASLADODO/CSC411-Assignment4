@@ -1,7 +1,7 @@
 CSC411-Assignment4
 ==================
-Team ᕦ( ✿ ⊙ ͜ʖ ⊙ ✿ )━☆ﾟ.*･｡ﾟ
-Jordan Bangia + Nathan Chau
+Team ᕦ( ✿ ⊙ ͜ʖ ⊙ ✿ )━☆ﾟ.*･｡ﾟ  
+Jordan Bangia + Nathan Chau  
 
 
 Repo for Machine Learning Assignment for CSC411 at UofT.
